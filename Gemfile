@@ -24,4 +24,8 @@ group :development, :test do
   gem 'spring'
 end
 
+# UI enhancements
+gem "less-rails" 
+gem "twitter-bootstrap-rails"
+
 gem 'httparty'
