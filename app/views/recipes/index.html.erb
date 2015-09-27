@@ -10,12 +10,16 @@
     </tr>
   </thead>
   <tbody>
-    <% @recipes.each do |recipe| %>
-      <tr>
-        <td class="imgcell"><%= link_to image_tag(recipe["image_url"], width: 256, height: 256), recipe["f2f_url"] %></td>
-        <td><%= link_to recipe["title"].html_safe, recipe["f2f_url"]%></td>
-        <td><%= truncated_rank recipe["social_rank"] %></td>
-      </tr>
+    <% if @recipes.presence %>
+      <% @recipes.each do |recipe| %>
+        <tr>
+          <td class="imgcell"><%= link_to image_tag(recipe["image_url"], width: 256, height: 256), recipe["f2f_url"] %></td>
+          <td><%= link_to recipe["title"].html_safe, recipe["f2f_url"]%></td>
+          <td><%= truncated_rank recipe["social_rank"] %></td>
+        </tr>
+      <% end %>
+    <% else %>
+     <tr> <td colspan=3> No recipes found :( Try something else! </td> </tr>
     <% end %>
   </tbody>
 </table>
