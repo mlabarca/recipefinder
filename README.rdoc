@@ -10,4 +10,3 @@ Current deploy of recipe finder uses bootstrap and adds a search field as an add
 
 https://recipefinderml.herokuapp.com
 
-<tt>rake doc:app</tt>.
