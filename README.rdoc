@@ -1,28 +1,13 @@
-== README
+== Recipe Finder
+This small database-less app was the final task for Coursera's Introduction to ruby on rails course. It simply just searches for recipes using the API on Food2Fork.com to search recipes that mention a keyword, and displays image, title and a "Social rank" (Popularity).
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Structure is mostly defined to meet requirements by the Coursera Grader.
+Expected app is supposed to only look like this one on lecture that uses Coursera API:
 
-Things you may want to cover:
+http://search-coursera-jhu.herokuapp.com/?looking_for=ruby
 
-* Ruby version
+Current deploy of recipe finder uses bootstrap and adds a search field as an added bonus: 
 
-* System dependencies
+https://recipefinderml.herokuapp.com
 
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-
-
-Please feel free to use a different markup language if you do not plan to run
 <tt>rake doc:app</tt>.
