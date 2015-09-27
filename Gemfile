@@ -1,7 +1,6 @@
 source 'https://rubygems.org'
 
 gem 'rails', '4.2.3'
-gem 'sqlite3'
 gem 'sass-rails', '~> 5.0'
 gem 'uglifier', '>= 1.3.0'
 gem 'coffee-rails', '~> 4.1.0'
@@ -15,6 +14,8 @@ gem 'poltergeist', '~> 1.6.0'
 gem 'phantomjs', '~> 1.9.8.0'
 
 group :development, :test do
+  gem 'sqlite3' # Breaks heroku deploy if used in production
+
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug'
 
@@ -29,3 +30,7 @@ gem "less-rails"
 gem "twitter-bootstrap-rails"
 
 gem 'httparty'
+
+# Heroku
+gem 'rails_12factor', group: :production
+gem 'pg', group: :production
